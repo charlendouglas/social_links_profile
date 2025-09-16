@@ -1,0 +1,159 @@
+:root{
+  --lightgray:hsl(0, 0%, 20%);
+  --medium-gray:hsl(0, 0%, 12%);
+  --darkgray:hsl(0, 0%, 8%);
+  --green:hsl(75, 94%, 57%);
+  --white:hsl(0, 0%, 100%);
+}
+
+#main-container{
+  background-color: var(--darkgray);
+  height:80%;
+  width:85%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  box-shadow: 10px 10px 15px -5px var(--green);
+}
+
+#card{
+  background-color: hsl(0, 0%, 12%);
+  width:50%;
+  max-width: 300px;
+  height:fit-content;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:1rem;
+  border-radius: 12px;
+}
+
+#person-image{
+  width:25%;
+  border-radius: 50%;
+}
+
+#person-name{
+  font-family: "Inter-Bold";
+  font-size:24px;
+  margin-bottom:0px;
+}
+
+#person-nationality{
+  font-family: "Inter-semibold";
+  margin-top:10px;
+  color:hsl(75, 94%, 57%);
+}
+
+#person-job{
+  margin-top:10px;
+}
+
+#rectangle{
+  width:20px;
+  height:100px;
+  position: absolute;
+  z-index:-10;
+  top:-85px;
+  right:200px;
+  transform: rotate(20deg);
+  border-right:10px solid hsla(212, 46%, 89%, 0.55);
+  border-left:10px solid hsla(212, 46%, 89%, 0.55);
+}
+
+#circle-one{
+  position: absolute;
+  top:-90px;
+  left:-50px;
+  border-radius: 50%;
+  border-start-end-radius:  50%;
+  width:180px;
+  height:180px;
+  border:10px solid hsla(212, 83%, 47%, 0.488);
+  border-bottom: 10px solid white;
+  transform: rotate(45deg);
+  z-index: -10;
+}
+
+#dot-one{
+  position: absolute;
+  left:4.5px;
+  z-index: 10;
+  height: 123px;
+  border-right:12px dotted rgba(0, 187, 255, 0.655);
+}
+
+#dot-two{
+  position: absolute;
+  left:-9%;
+  height: 123px;
+  width:10px;
+  padding-left: 10px;
+  padding-right: -5px;
+  border-left:12px dotted rgba(0, 187, 255, 0.655);
+  border-right:12px dotted rgba(0, 187, 255, 0.655);
+  border-spacing:0px;
+}
+
+.zig-zag{
+  position: absolute;
+  height:40px;
+  width:40px;
+  transform: rotate(45deg);
+  border-bottom:7px solid rgba(255, 192, 203);
+  border-right:7px solid rgba(255, 192, 203);
+  border-bottom-right-radius: 7px;
+  bottom:-20px;
+  z-index: -10;
+}
+
+.two{
+  bottom:-50px;
+}
+
+#one{
+  right:-42px;
+}
+
+#two{
+  right:17px;
+}
+
+#three{
+  right:74px;
+}
+
+#four{
+  right:131px;
+}
+
+#five{
+  right:188px;
+}
+
+#curve,#curve-one{
+  width: 50px;
+  height:80px;
+  position: absolute;
+  bottom:-30px;
+  left:120px;
+  z-index: 0;
+  border:8px solid white;
+  border-right:8px solid rgb(0, 187, 255);
+  border-radius: 50%;
+}
+#curve-one{
+  bottom:-90px;
+}
+svg{
+  position:absolute;
+  bottom:10px;
+}
+
+.attribution{
+  position:absolute;
+  bottom:10px;
+  color:black
+}
